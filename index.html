@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef"><title>Мои путешествия</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#trips"><span class="brand-mark">✳</span><span>куда<br><b>дальше?</b></span></a>
+    <p class="side-label">МОЁ ПРОСТРАНСТВО</p>
+    <nav id="nav">
+      <button class="nav-item active" data-view="trips"><span>▤</span> Мои поездки <i id="tripCount">0</i></button>
+      <button class="nav-item" data-view="wishlist"><span>♡</span> Список желаний</button>
+      <button class="nav-item" data-view="countries"><span>◎</span> Страны</button>
+      <button class="nav-item" data-view="settings"><span>⚙</span> Настройки</button>
+    </nav>
+    <div class="side-note"><span>✦</span><p>Мир больше, чем кажется.<br>Запланируй следующее<br>приключение.</p></div>
+    <div class="profile"><div class="avatar">✿</div><div><b id="profileName">Мой журнал</b><small>личное пространство</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><span class="eyebrow" id="today"></span><button class="icon-button" id="quickAdd" aria-label="Добавить поездку">＋</button></header>
+    <section id="content"></section>
+  </main>
+</div>
+<div id="modalRoot"></div><div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
